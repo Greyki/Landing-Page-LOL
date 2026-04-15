@@ -55,10 +55,11 @@ h1, h2, h3, h4 {
     height: 200px;
     object-fit: cover;
     transition: transform 0.4s ease; /* Agrega una transición suave para el efecto de zoom */
+    transform-origin: center;
 }
 
 .card:hover {
-    transform: translateY(-20px); /* Eleva la tarjeta al hacer hover */
+    transform: translateY(-3px); /* Eleva la tarjeta al hacer hover */
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.6);
 }
 
@@ -104,5 +105,40 @@ h1, h2, h3, h4 {
     font-size: 14px;
     color: #8b949e;
     border-top: 1px solid #30363d;
+}
+
+#champCarousel {
+    padding: 0 60px;
+    position: relative;
+}
+
+#champCarousel .carousel-control-ant,
+#champCarousel .carousel-control-sig {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#champCarousel .carousel-control-ant {
+    left: 5px;
+}
+
+#champCarousel .carousel-control-sig {
+    right: 5px;
+}
+
+#champCarousel .carousel-control-ant:hover,
+#champCarousel .carousel-control-sig:hover {
+    opacity: 1;
 }
 

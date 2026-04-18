@@ -18,7 +18,7 @@ h1, h2, h3, h4 {
 }
 
 .navbar a {
-    color: #e6edf3 !important;
+    color: #e6edf3;
     font-size: 18px;
 }
 
@@ -99,6 +99,10 @@ h1, h2, h3, h4 {
     color: #9da7b3;
 }
 
+span {
+    font-weight: bold;
+}
+
 .footer {
     background-color: #0d1117;
     padding: 25px;
@@ -143,3 +147,74 @@ h1, h2, h3, h4 {
     opacity: 1;
 }
 
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d1117;
+    color: #e6edf3;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Contenedor principal */
+.container-principal {
+    max-width: 600px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+/* Contenedor superior */
+.container-superior {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container-superior h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.container-superior p {
+    font-size: 16px;
+    color: #9da7b3;
+}
+
+/* Contenedor inferior */
+.container-inferior {
+    background-color: #161b22;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #30363d;
+}
+
+/* Inputs */
+.form-control, .form-select {
+    background-color: #0d1117;
+    color: #e6edf3;
+    border: 1px solid #30363d;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #58a6ff;
+    box-shadow: none;
+}
+
+/* Labels */
+.form-label {
+    font-size: 14px;
+}
+
+/* Botón */
+.contenedor-boton {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background-color: #238636;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #2ea043;
+}
